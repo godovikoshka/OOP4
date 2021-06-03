@@ -25,7 +25,7 @@ namespace UnitTestProject1
             t2.Join();
             t3.Join();
 
-            Assert.AreEqual(0, k);
+            Assert.AreEqual(-1, k);
         }
 
         [TestMethod]
@@ -37,7 +37,7 @@ namespace UnitTestProject1
             t1.Start();
             t1.Join();
 
-            Assert.AreEqual(-1, k);
+            Assert.AreEqual(0, k);
         }
     }
 }
