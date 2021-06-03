@@ -27,12 +27,12 @@ namespace OOP4
             if (!IsSingleInstance())
             {
                 Console.WriteLine("More than one instance");
-                return -1;
+                return 0;
             }
             else
             {
                 Console.WriteLine("One instance");
-                return 0;
+                return 1;
             }
         }
     }
