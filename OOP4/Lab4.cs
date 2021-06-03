@@ -24,15 +24,15 @@ namespace OOP4
 
         public static int Main()
         {
-            if (!IsSingleInstance())
+            if (IsSingleInstance())
             {
                 Console.WriteLine("More than one instance");
-                return 0;
+                return -1;
             }
             else
             {
                 Console.WriteLine("One instance");
-                return 1;
+                return 0;
             }
         }
     }
